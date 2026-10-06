@@ -80,7 +80,7 @@ def get_model_status_info() -> Dict[str, Any]:
 def load_model(
     adapter_path: Optional[str] = None,
     force_reload: bool = False,
-    allow_base_fallback: bool = True
+    allow_base_fallback: bool = False
 ) -> Tuple[Any, Any]:
     """
     Temel Qwen2.5 modelini ve eğitilmiş LoRA adaptörünü GPU belleğine uygun biçimde yükler.
