@@ -299,7 +299,7 @@ def validate_and_prepare_datasets(sample_size: Optional[int] = None) -> Tuple[An
     """
     from datasets import Dataset
 
-    # 1. Öncelik: Dataset/ klasöründeki hazır ayrılmış train ve test dosyaları
+    # Dataset/ klasöründeki hazır ayrılmış train ve test dosyaları
     train_source = None
     val_source = None
 
@@ -309,20 +309,9 @@ def validate_and_prepare_datasets(sample_size: Optional[int] = None) -> Tuple[An
         print(f"Dataset/ klasöründeki veriler kullanılıyor: {train_source}")
         if val_source:
             print(f"Doğrulama/Test verisi kullanılıyor: {val_source}")
-    elif os.path.exists(config.PROCESSED_TRAIN_FILE) and os.path.exists(config.PROCESSED_VAL_FILE):
-        train_source = config.PROCESSED_TRAIN_FILE
-        val_source = config.PROCESSED_VAL_FILE
-        print(f"İşlenmiş eğitim kümesi yüklendi: {train_source}")
-        print(f"İşlenmiş doğrulama kümesi yüklendi: {val_source}")
-    elif os.path.exists(config.TRAIN_DATA_FILE):
-        print("Dataset/ klasörü bulunamadı, data/train_data.json üzerinden otomatik hazırlanıyor...")
-        raw_data = load_json(config.TRAIN_DATA_FILE)
-        res = process_and_split_pipeline(raw_data, config.DATA_DIR)
-        train_source = res["paths"]["train"]
-        val_source = res["paths"]["val"]
     else:
         raise FileNotFoundError(
-            f"Eğitim verisi bulunamadı! Lütfen {config.TRAIN_FILE} veya {config.TRAIN_DATA_FILE} dosyasını kontrol edin."
+            f"Eğitim verisi bulunamadı! Lütfen {config.TRAIN_FILE} dosyasının var olduğundan emin olun."
         )
 
     # Verileri oku ve hazırla

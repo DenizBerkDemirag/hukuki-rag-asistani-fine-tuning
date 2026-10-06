@@ -9,23 +9,11 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# Ham veri ve data/ klasörü
-DATA_DIR = os.path.join(BASE_DIR, "data")
-TRAIN_DATA_FILE = os.path.join(DATA_DIR, "train_data.json")
-
-# İşlenmiş eğitim verileri (messages formatı)
-PROCESSED_TRAIN_FILE = os.path.join(DATA_DIR, "train_messages.json")
-PROCESSED_VAL_FILE = os.path.join(DATA_DIR, "val_messages.json")
-PROCESSED_TEST_FILE = os.path.join(DATA_DIR, "test_messages.json")
-
-# Mevcut Dataset/ klasörü yolları
+# Veri kümesi yolları (Dataset/ klasörü)
 DATASET_DIR = os.path.join(BASE_DIR, "Dataset")
 TRAIN_FILE = os.path.join(DATASET_DIR, "train.json")
 TEST_FILE = os.path.join(DATASET_DIR, "test.json")
 MAIN_SET_FILE = os.path.join(DATASET_DIR, "main_set.json")
-
-# Mevzuat belgeleri
-MEVZUAT_DIR = os.path.join(DATA_DIR, "mevzuat")
 
 # Eğitilmiş model çıktı dizini
 OUTPUT_DIR = os.path.join(BASE_DIR, "models", "hukuk_lora")
