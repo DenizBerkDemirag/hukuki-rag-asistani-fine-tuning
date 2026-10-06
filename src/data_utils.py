@@ -540,7 +540,7 @@ def save_dataset_file(
 
 def process_and_split_pipeline(
     raw_data: List[Any],
-    output_dir: str = config.DATA_DIR,
+    output_dir: str = config.DATASET_DIR,
     system_prompt: str = config.SYSTEM_PROMPT,
     deduplicate_exact: bool = True,
     seed: int = 42
