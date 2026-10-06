@@ -1,0 +1,25 @@
+# ==============================================================================
+# Türk Hukuku Asistanı - Python Bağımlılıkları
+# ==============================================================================
+
+# Arayüz
+streamlit>=1.35.0
+
+# Veri işleme
+pandas>=2.2.0
+
+# Görselleştirme
+plotly>=5.22.0
+
+# Makine Öğrenmesi (GPU/CUDA için aşağıdaki notu okuyun)
+# Not: Python 3.14+ CUDA destekli PyTorch için:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+torch>=2.2.0
+transformers>=4.44.0
+datasets>=2.18.0
+accelerate>=0.30.0
+
+# QLoRA ve İnce Ayar
+peft>=0.10.0
+trl>=0.8.6
+bitsandbytes>=0.43.0

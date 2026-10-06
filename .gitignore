@@ -1,0 +1,60 @@
+# ==========================================
+# Python & Bytecode
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ==========================================
+# Sanal Ortamlar (Virtual Environments)
+# ==========================================
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ==========================================
+# Vektör Veritabanı ve Yerel İndeksler
+# ==========================================
+chroma_db/
+*.sqlite3
+
+# ==========================================
+# Ortam Değişkenleri ve Gizli Anahtarlar
+# ==========================================
+.env
+.env.*
+!.env.example
+
+# ==========================================
+# Model Eğitimi, Checkpoint ve Loglar
+# ==========================================
+# Eğitim sırasında oluşan geçici kontrol noktaları
+checkpoint-*/
+wandb/
+runs/
+*.log
+.cache/
+
+# Not: models/hukuk_lora (~20MB) küçük bir LoRA adaptörü olduğu için
+# repoda tutulabilir. Ancak temel model veya >100MB ağırlıklar
+# eklenecekse aşağıdaki satırları aktif edebilirsiniz:
+# *.pt
+# *.pth
+# *.bin
+
+# ==========================================
+# IDE ve İşletim Sistemi Dosyaları
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+Thumbs.db
+[Dd]esktop.ini
+.DS_Store

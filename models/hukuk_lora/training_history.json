@@ -1,0 +1,94 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "history": [
+    {
+      "step": 20,
+      "epoch": 0.1,
+      "train_loss": 2.571,
+      "eval_loss": null,
+      "learning_rate": 0.00019889478706014687,
+      "timestamp": "2026-10-02T21:07:26.788349"
+    },
+    {
+      "step": 40,
+      "epoch": 0.2,
+      "train_loss": 1.2616,
+      "eval_loss": null,
+      "learning_rate": 0.0001887222819443612,
+      "timestamp": "2026-10-02T21:18:18.670407"
+    },
+    {
+      "step": 60,
+      "epoch": 0.3,
+      "train_loss": 0.9504,
+      "eval_loss": null,
+      "learning_rate": 0.0001689353409118566,
+      "timestamp": "2026-10-02T21:29:16.213447"
+    },
+    {
+      "step": 80,
+      "epoch": 0.4,
+      "train_loss": 0.9443,
+      "eval_loss": null,
+      "learning_rate": 0.00014167818604952906,
+      "timestamp": "2026-10-02T21:40:10.422086"
+    },
+    {
+      "step": 100,
+      "epoch": 0.5,
+      "train_loss": 0.8664,
+      "eval_loss": null,
+      "learning_rate": 0.0001099045530250463,
+      "timestamp": "2026-10-02T21:50:41.690253"
+    },
+    {
+      "step": 120,
+      "epoch": 0.6,
+      "train_loss": 0.8462,
+      "eval_loss": null,
+      "learning_rate": 7.705760799532485e-05,
+      "timestamp": "2026-10-02T22:02:01.686134"
+    },
+    {
+      "step": 140,
+      "epoch": 0.7,
+      "train_loss": 0.7583,
+      "eval_loss": null,
+      "learning_rate": 4.669682712720065e-05,
+      "timestamp": "2026-10-02T22:13:02.435254"
+    },
+    {
+      "step": 160,
+      "epoch": 0.8,
+      "train_loss": 0.8199,
+      "eval_loss": null,
+      "learning_rate": 2.2112272123788768e-05,
+      "timestamp": "2026-10-02T22:23:32.055617"
+    },
+    {
+      "step": 180,
+      "epoch": 0.9,
+      "train_loss": 0.7981,
+      "eval_loss": null,
+      "learning_rate": 5.968060988383883e-06,
+      "timestamp": "2026-10-02T22:33:17.212680"
+    },
+    {
+      "step": 200,
+      "epoch": 1.0,
+      "train_loss": 0.8132,
+      "eval_loss": null,
+      "learning_rate": 1.3669500753099585e-08,
+      "timestamp": "2026-10-02T22:43:17.611765"
+    },
+    {
+      "step": 200,
+      "epoch": 1.0,
+      "train_loss": null,
+      "eval_loss": null,
+      "learning_rate": null,
+      "timestamp": "2026-10-02T22:43:17.617222"
+    }
+  ],
+  "last_update": "2026-10-02T22:43:17.617585"
+}
